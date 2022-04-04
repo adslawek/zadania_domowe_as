@@ -6,30 +6,8 @@
 #wersja_1
 
 numer_dnia = 1
-pozostawienie_butow = int(input("Podaj numer dnia: "))
+dzien = int(input("Podaj numer dnia, w którym pozostawiono buty: "))
 dlugosc_naprawy = int(input("Podaj czas na naprawę: "))
+termin = dzien + dlugosc_naprawy - ((dzien + dlugosc_naprawy) // 7) * 7
 
-for liczba in range(0,6):
-    numer_dnia += 1
-    if numer_dnia > 7:
-        print("Podaj liczbę 1-7.")
-    elif dlugosc_naprawy > 7:
-        print("Nasze naprawy nie trwają dłużej niż 7 dni: ")
-
-print(f'Możesz odebrać buty w dniu {dlugosc_naprawy}.')
-
-#wersja_2
-
-numer_dnia = 1
-pozostawienie_butow = int(input("Podaj numer dnia: "))
-dlugosc_naprawy = int(input("Podaj czas na naprawę: "))
-odbior_butow = pozostawienie_butow + 5
-
-while numer_dnia <= 1:
-    numer_dnia += 1
-    if numer_dnia > 7:
-        print("Podaj liczbę 1-7.")
-    elif odbior_butow > 7:
-        print("Nasze naprawy nie trwają dłużej niż 7 dni: ")
-
-print(f'Możesz odebrać buty w dniu {odbior_butow}.')
+print(f'Możesz odebrać buty w dniu {termin}.')
