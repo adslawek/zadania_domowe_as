@@ -12,3 +12,4 @@ while True:
         print("Podana liczba jest większa od wylosowanej. Próbuj dalej!")
     elif proba < x:
         print("Podana liczba jest mniejsza od wylosowanej. Próbuj dalej!")
+        continue
