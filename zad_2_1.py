@@ -7,7 +7,7 @@ print(f'Wylosowano liczby: {x} i {y}. Podaj ich sumę!')
 while True:
     proba = int(input("Suma wylosowanych liczb: "))
     if proba == suma:
-        print(f'Podałeś prawidłowy wynik. Suma wolosowanych liczb to {suma}')
+        print(f'Podałeś prawidłowy wynik. Suma wylosowanych liczb to {suma}')
         break
     else:
         print('Wynik nieprawidłowy. Próbuj dalej!')
