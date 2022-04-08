@@ -4,9 +4,9 @@ suma = x
 min = x
 max = x
 
-while x != "y":
-    x = input("Podaj liczbę lub kilka liczb. Kiedy skończysz, podaj [y]: ")
-    if x != "y":
+while x != "koniec":
+    x = input("Podaj liczbę lub kilka liczb. Kiedy skończysz, podaj [koniec]: ")
+    if x != "koniec":
         x = int(x)
         suma = suma + x
         ile_liczb += 1
