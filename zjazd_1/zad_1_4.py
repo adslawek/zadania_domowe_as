@@ -17,4 +17,4 @@ if wiek >= 65:
 
 oplata_koncowa = oplata * ilosc_nocy
 
-print(oplata_koncowa, "PLN")
+print("Opłata za pobyt wynosi: ", oplata_koncowa, "PLN")
