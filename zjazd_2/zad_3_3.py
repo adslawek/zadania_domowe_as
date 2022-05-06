@@ -33,6 +33,35 @@ def wypisz_wieksze(lista: list, liczba: float):
 
 wypisz_wieksze(list, liczba=55)
 
+#pierwsza wieksza
+def pierwsza_wieksza(lista: list, liczba: float):
+    lista_adama = [2, 22, 23, 25, 28, 99, 104, 105, 333, 698, 900]
+    x = float(input("Podaj liczbe: "))
+    wynik = 0
+    for liczba in lista_adama:
+        if x > liczba:
+            return lista_adama
+        else:
+            return None
+    return wynik
+
+print(pierwsza_wieksza(list ,liczba=25))
+
 #pierwsza_wieksza(liczby, x) – zwraca ( return ) pierwszą znalezioną w liczby liczbę większą od x
 #zwraca None , jeśli takiej liczby tam nie ma
+
+
+#wypisz_podzielne(liczby, x) – wypisuje ( print ) wszystkie te liczby z listy liczby , które są podzielne przez x
+
+def wypisz_podzielne(lista: list, liczba: float):
+    lista_adama = [2, 22, 23, 25, 28, 99, 104, 105, 333, 698, 900]
+    x = float(input("Podaj liczbe: "))
+    ile_liczb = 0
+    for liczba in lista_adama:
+        if liczba % x == 0:
+            print(liczba)
+
+    return ile_liczb
+
+print(wypisz_podzielne(list, liczba=float))
 
