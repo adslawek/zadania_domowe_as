@@ -50,7 +50,7 @@ class Robot:
             elif instrukcja == 'P':
                 self.prawo()
 
-robocop = Robot(1,1, "N")
+robocop = Robot(15,15, "N")
 robocop.wypisz()
 robocop.lewo()
 robocop.wypisz()
